@@ -1,0 +1,1 @@
+This is the [Admin Dashboard assignment](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard) from The Odin Project. It has emphasis on CSS Grid, and is meant to culminate the [Intermediate HTML and CSS Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css).

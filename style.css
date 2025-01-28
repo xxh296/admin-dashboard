@@ -89,6 +89,20 @@
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+
+}
+
+.upper-row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.lower-row {
+    display: flex;
+    flex-wrap: wrap;
 
 }
 

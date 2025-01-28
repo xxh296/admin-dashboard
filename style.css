@@ -101,7 +101,7 @@
     display: grid;
     grid-template-columns: 3fr 1.25fr;
     align-items: center;
-    padding: 0 2.75rem;
+    padding: 0 2.75rem 0.5rem 0;
 }
 
 .upper-row-left {
@@ -165,6 +165,7 @@
 .lower-row {
     display: grid;
     grid-template-columns: 1.25fr 1fr;
+    /* padding-bottom: 1rem;   */
 }
 
 .lower-row-left {
@@ -208,6 +209,7 @@
     color: white;
     font-size: 1rem;
     font-weight: 700;
+    border: none;
 
    
 
@@ -215,4 +217,24 @@
 
 .main-content {
     grid-area: main-content;
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "content-header content-header"
+    "project-cards announcements-col";
+
+
+    background-color: #e2e8f0;
+}
+
+.content-header {
+    grid-area: content-header;
+}
+
+.project-cards {
+    grid-area: project-cards;
+}
+
+.announcements-col {
+    grid-area: announcements-col;
 }

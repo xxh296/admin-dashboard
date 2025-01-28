@@ -1,5 +1,5 @@
 * {
-    outline: solid red;
+    /* outline: solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 .container {
     display: grid;
     grid-template-rows: 1fr 4fr;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1.2fr 4.4fr;
     grid-template-areas: 
     "sidebar header"
     "sidebar main-content";
@@ -57,12 +57,12 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(6, 1fr);
     align-items: center;
-    padding-left: 1.4rem;
+    padding-left: 1.75rem;
     align-self: self-start;
     row-gap: 1.5rem;    
 
     img {
-        height: 1.5rem;
+        height: 1.75rem;
     }
 }
 
@@ -72,12 +72,13 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
-    padding-left: 1.4rem;
+    padding-left: 1.75rem;
     align-self: self-start;
     row-gap: 1.5rem;
+    margin-top: 2.5rem;
 
     img {
-        height: 1.5rem;
+        height: 1.75rem;
     }
 }
 
@@ -90,23 +91,80 @@
 .header {
     grid-area: header;
     display: grid;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr;
 
 }
 
 .upper-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 3fr 1.25fr;
+    align-items: center;
+    padding: 0 2.75rem;
+}
 
+.upper-row-left {
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    justify-self: start;
+    width: 85%;
+}
+
+.upper-row-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#button-search {
+    background: url(./icons/magnify.svg);
+    background-size: 1.75rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+}
+
+#search-bar {
+    background-color: #e2e8f0; 
+    padding: 0.3rem;
+    border-radius: 2rem;
+
+    flex-grow: 1; 
+}
+
+#button-alert {
+    background: url(./icons/bell-ring-outline.svg);
+    background-size: 1.75rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    
+}
+
+#button-profile {
+    background: url(./avatars/user-310807_640.png);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+}
+
+.upper-row div {
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .lower-row {
-    display: flex;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: 2fr 4fr repeat(3, 2fr);
 }
 
 .main-content {
     grid-area: main-content;
-
 }

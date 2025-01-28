@@ -21,7 +21,8 @@
     background-color: #1992d4;
     color: white;
     display: grid;
-    grid-template-rows: 1fr 2.7fr 6fr;
+    height: 100vh;
+    grid-template-rows: 1fr 2.7fr 6fr;    
     grid-template-areas: 
     "sidebar-top"
     "sidebar-main"
@@ -43,7 +44,8 @@
     grid-template-columns: 1fr 4fr;
     align-items: center;
     padding: 1rem;
-    margin-bottom: 2.5rem;
+    align-self: self-start;
+    /* margin-bottom: 2.5rem; */
 
     div {
         font-size: 2rem;
@@ -59,7 +61,7 @@
     align-items: center;
     padding-left: 1.75rem;
     align-self: self-start;
-    row-gap: 1.5rem;    
+    row-gap: 1.5rem;  
 
     img {
         height: 1.75rem;

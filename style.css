@@ -1,5 +1,5 @@
 * {
-    outline: solid darkorange;
+    /* outline: solid black; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -220,12 +220,16 @@
     grid-area: main-content;
     grid-template-rows: 1fr 10fr;
     grid-template-columns: 3fr 1fr;
+    
+    /* gap: 10px; */
     grid-template-areas: 
     "content-header content-header"
     "project-cards announcements-col";
 
 
+    padding: 1rem;
     background-color: #e2e8f0;
+    /* background-color: black; */
 }
 
 .content-header {
@@ -235,12 +239,40 @@
     font-size: 1.5rem;
     font-weight: 700;
     align-items: end;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .project-cards {
+    display: grid;
     grid-area: project-cards;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+    padding: 1rem 1rem 0 0;
 }
+
+.card {
+    height: 200px;
+    border-radius: 0.5rem;
+    border-left: 0.5rem solid orange;
+    background-color: white;
+}
+
+.card p {
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 0 20px 0 25px;
+    
+  }
+  
+  .card .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 25px 0 0 25px;
+  }
+
+
+
 
 .announcements-col {
     grid-area: announcements-col;

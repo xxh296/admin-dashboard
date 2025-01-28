@@ -1,5 +1,5 @@
 * {
-    /* outline: solid red; */
+    outline: solid darkorange;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -216,6 +216,7 @@
 }
 
 .main-content {
+    display: grid;
     grid-area: main-content;
     grid-template-rows: 1fr 10fr;
     grid-template-columns: 3fr 1fr;
@@ -229,6 +230,12 @@
 
 .content-header {
     grid-area: content-header;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-size: 1.5rem;
+    font-weight: 700;
+    align-items: end;
+    padding-bottom: 1rem;
 }
 
 .project-cards {

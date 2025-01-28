@@ -1,5 +1,5 @@
 * {
-    /* outline: solid red; */
+    outline: solid red;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -61,7 +61,7 @@
     align-items: center;
     padding-left: 1.75rem;
     align-self: self-start;
-    row-gap: 1.5rem;  
+    row-gap: 1.5rem;
 
     img {
         height: 1.75rem;
@@ -164,8 +164,25 @@
 
 .lower-row {
     display: grid;
-    grid-template-columns: 2fr 4fr repeat(3, 2fr);
+    grid-template-columns: 1fr 1fr;
 }
+
+.lower-row-left {
+    display: flex;
+    align-items: center;
+    img {
+        height: 5rem;
+    }
+
+}
+
+.lower-row-right {
+    display: flex;
+    align-items: center;
+
+}
+
+
 
 .main-content {
     grid-area: main-content;

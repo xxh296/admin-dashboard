@@ -14,7 +14,6 @@
     grid-template-areas: 
     "sidebar header"
     "sidebar main-content";
-
 }
 
 .sidebar {
@@ -217,7 +216,7 @@
     "content-header content-header"
     "project-cards announcements-col";
 
-    padding: 1rem;
+    padding: 1rem 1rem 4rem 1rem;
     background-color: #e2e8f0;
     overflow-y: auto; /* prevent child div breakout */
 }

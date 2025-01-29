@@ -148,6 +148,7 @@
 #button-profile {
     background: url(./avatars/user-310807_640.png);
     background-size: 3rem;
+    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
     width: 3rem;
@@ -172,6 +173,7 @@
 
     img {
         height: 4rem;
+        border-radius: 50%;
     }
 }
 
@@ -365,4 +367,5 @@
 
 .trending-items img {
     height: 3rem;
+    border-radius: 50%;
 }

@@ -1,5 +1,5 @@
 * {
-    outline: solid orange;
+    /* outline: solid orange; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -329,8 +329,15 @@
     font-weight: 700;
     display: grid;
     align-items: center;
+    margin-bottom: -1rem; /* .trending-items needs to be pulled up a bit */
 }
 
 .trending-items {
     grid-area: trending-items;
+
+    box-shadow: 0 0 0.25rem gray;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem; /* align with the bottom at .project-cards, in 100% view */
 }

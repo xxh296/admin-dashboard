@@ -150,8 +150,8 @@
     background-size: 3rem;
     background-repeat: no-repeat;
     background-position: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border: none;
 }
 
@@ -171,7 +171,7 @@
     padding-left: 3rem;
 
     img {
-        height: 5rem;
+        height: 4rem;
     }
 }
 
@@ -249,7 +249,7 @@
 .card p {
     color: black;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 1rem;
     padding: 0 20px 0 25px;
 }    
    
@@ -319,7 +319,7 @@
 }
 
 .announcements-card p:nth-last-of-type(1) {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 300;
 }
 
@@ -353,7 +353,12 @@
 }
 
 .trending-items a > p:nth-of-type(1) {
+    font-size: 0.9rem;
     font-weight: 700;
+}
+
+.trending-items a > p:nth-of-type(2) {
+    font-size: 0.9rem;
 }
 
 .trending-items img {

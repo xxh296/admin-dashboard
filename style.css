@@ -329,7 +329,6 @@
     font-weight: 700;
     display: grid;
     align-items: center;
-    margin-bottom: -1rem; /* .trending-items needs to be pulled up a bit */
 }
 
 .trending-items {
@@ -344,7 +343,10 @@
     border-radius: 0.5rem;
     background-color: white;
     padding: 2rem;
-    margin-bottom: 1.5rem; /* align with the bottom at .project-cards, in 100% view */
+
+    margin-bottom: 1.5rem; /*Optional: align with the bottom at .project-cards, in 100% view*/
+    margin-top: -0.5rem;
+    height: 89%; /*Optional: align with the bottom at .project-cards, in 100% view */
 }
 
 .trending-items a {

@@ -240,6 +240,7 @@
 
 .card {
     height: 13rem;
+    overflow-y: scroll;
     border-radius: 0.5rem;
     border-left: 0.5rem solid orange;
     background-color: white;
